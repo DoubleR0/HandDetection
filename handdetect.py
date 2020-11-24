@@ -1,5 +1,4 @@
 import cv2
-import tensorflow as tf
 # import imutils
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,11 +9,11 @@ cap0 = cv2.VideoCapture(0)
 
 kernelD = np.ones((5, 5), np.uint8)
 kernelE = np.ones((3, 3), np.uint8)
-# lower = np.array([0, 48, 80], dtype = "uint8")
-# upper = np.array([30, 255, 255], dtype = "uint8")
-
-lower = np.array([0, 80, 80], dtype = "uint8")
+lower = np.array([0, 48, 80], dtype = "uint8")
 upper = np.array([30, 255, 255], dtype = "uint8")
+
+# lower = np.array([0, 80, 80], dtype = "uint8")
+# upper = np.array([30, 255, 255], dtype = "uint8")
 template = cv2.imread('./public/dataset/C_001.jpg', 0)
 
 
